@@ -14,7 +14,7 @@ def hello_flask():
 def show_home():
     return render_template('Index.html')
 
-@app.route('/<string:country>/<string:variety>/<floar:aroma>/<float:aftertaste>/<float:acidity>/<float:body>/<float:balance>/<float:moisture>/')
+@app.route('/<string:country>/<string:variety>/<float:aroma>/<float:aftertaste>/<float:acidity>/<float:body>/<float:balance>/<float:moisture>/')
 def result(country, variety, aroma, aftertaste, acidity, body, balance, moisture):
     cols = ['country_of_origin', 'variety', 'aroma', 'aftertaste', 'acidity', 'body', 'balance', 'moisture']   
     data = [country, variety, aroma, aftertaste, acidity, body, balance, moisture]
