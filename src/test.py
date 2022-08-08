@@ -17,5 +17,5 @@ posted = pd.DataFrame(np.array(data).reshape(1,8), columns= cols)
 
 loaded_model = pickle.load(open('../models/coffee_model.pkl', 'rb'))
 result = loaded_model.predict(posted)
-text_result = result.tolist(result)[0]
+text_result = result.tolist()[0]
 print(text_result)
