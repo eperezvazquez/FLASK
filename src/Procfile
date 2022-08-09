@@ -1,1 +1,2 @@
-web: unicorn app:app
+Procfile
+    web: gunicorn app:app
